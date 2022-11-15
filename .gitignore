@@ -1,0 +1,6 @@
+.DS_Store
+__pycache__
+deploy_pypi.sh
+build
+dist
+*.egg-info
