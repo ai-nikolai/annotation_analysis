@@ -125,7 +125,7 @@ def fleiss_kappa(annotations:List[Any], labels:Optional[List]=None, ignore:Optio
             - I.e. If this is non-empty then for any datapoint, if any of the annotators has the ignored label, the data point with all annotators is ignored
 
     Return:
-        - Krippendorff Alpha score for all annotators.
+        - Fleiss Kappa score for all annotators.
     """
     vocab = Vocab()
     vocab.fit(annotations)
