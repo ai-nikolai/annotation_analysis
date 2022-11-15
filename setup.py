@@ -28,5 +28,9 @@ setup(
     #
     # Requirements
     #
-      install_requires=[]
+      install_requires=[
+        "numpy",
+        "krippendorff",
+        "statsmodels"
+      ]
       )
