@@ -17,7 +17,7 @@
 # >>>>>>  Package Imports <<<<<<<
 
 # >>>>>>  Local Imports   <<<<<<<
-from . import interannotator_metrics
+from annotation_analysis import interannotator_metrics
 
 ####################################################
 # CODE
@@ -32,6 +32,12 @@ from . import interannotator_metrics
 ####################################################
 # MAIN
 ####################################################
+if __name__ == "__main__":
+    annotations = [["A","B","A"],["A","B","B"]]
+    k_alpha = interannotator_metrics.krippendorff_alpha(annotations)
+    f_kappa = interannotator_metrics.fleiss_kappa(annotations)
+    print(k_alpha)
+    print(f_kappa)
 
 
 # EOF
