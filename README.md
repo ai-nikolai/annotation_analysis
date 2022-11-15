@@ -9,6 +9,18 @@ Install package:
 pip3 install annotation_analysis
 ```
 
+Example usage:
+```python
+from annotation_analysis import interannotator_metrics
+
+if __name__ == "__main__":
+    annotations = [["A","B","A"],["A","B","B"]]
+    k_alpha = interannotator_metrics.krippendorff_alpha(annotations)
+    f_kappa = interannotator_metrics.fleiss_kappa(annotations)
+    print(k_alpha)
+    print(f_kappa)
+```
+
 
 ## Documentation
 ### function krippendorf_alpha(annotations:List[List],labels:Optional[List], ignore=Optional[List])
